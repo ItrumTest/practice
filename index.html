@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Task manager</title>
-    <link rel="stylesheet" href="main.css" />
+    <title>Poke manager</title>
+    <link rel="stylesheet" href="./src/styles/main.css" />
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -11,13 +11,15 @@
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
   </head>
   <body>
-    <main class="container">
-      <div>
-        <input id="input" type="text">
-        <button onclick="getValue()">get input value</button>
-        <button onclick="clearInput()">clear value</button>
+      <div class="pokeContainer">
+        <input id="input" onchange="inputPoke()" type="text" placeholder="enter poke name">
       </div>
-    </main>
+      <div class="pokeContainer"><span id="pokeName">4</span></div>
+      <div class="pokeContainer1">
+        <img class="arrow" onclick="getPokeNext()" src="./arrow-right-solid.svg" alt="">
+        <img id="poke" class="poke" src="" alt="">
+        <img onclick="getPokeNext('next')" src="./arrow-right-solid.svg" alt="">
+      </div>
     <script src="./app/importJSfiles.js"></script>
   </body>
 </html>

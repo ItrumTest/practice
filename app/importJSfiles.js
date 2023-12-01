@@ -1,5 +1,5 @@
 const files = [
-  "./src/common/getInputValue.js",
+  "./src/common/pokeApp.js",
 ];
 
 function importFiles(files) {
